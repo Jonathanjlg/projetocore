@@ -31,3 +31,8 @@ def number_uc(numero):
         case 11: return f"UC {numero} -Lógica de Programação"
         case 12: return f"UC {numero} -Informática Básica"
         case _:return f" Dados inexistente"
+
+
+@app.route("/login")
+def login_ps():
+    return "alô rota!"

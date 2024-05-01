@@ -11,3 +11,4 @@ migrate = Migrate(app,db)
 
 
 from .models import uc_model
+from .views import uc_view
