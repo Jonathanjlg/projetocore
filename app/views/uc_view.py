@@ -1,5 +1,16 @@
 from app import app
 from flask import render_template
+
+@app.route("/")
+def index():
+    return render_template("login/uc_login.html")
+
+
+
+
+
+
+
 @app.route("/listuc")
 def listar_uc():
     return render_template("uncompetencias/uc_template.html")
@@ -36,3 +47,6 @@ def number_uc(numero):
 @app.route("/login")
 def login_ps():
     return "alô rota!"
+@app.route("/cadastrar")
+def cadastrar_uc():
+    return "Rota teste cadastrar"
